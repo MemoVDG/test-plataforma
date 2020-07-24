@@ -1,6 +1,5 @@
 from django.db import models
 from django.core.exceptions import ValidationError
-from django.core.validators import MinLengthValidator
 
 
 def validate_name(value, min=6, max=55):
