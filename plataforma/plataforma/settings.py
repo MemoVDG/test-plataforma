@@ -25,7 +25,7 @@ SECRET_KEY = '-p_all0&e0aqhb0%+&q*o=uadlh_cxr6w#di@bl@_gci#q8$=-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ '127.0.0.1','django-env.eba-3qrupa8m.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -82,18 +82,18 @@ DATABASES = {
     }
 }
 """
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'products',
-        'USER': 'yourUser',
-        'PASSWORD': 'yourPsw',
+        'USER': 'postgres',
+        'PASSWORD': 'toor',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
-"""
+
 
 
 # Password validation
