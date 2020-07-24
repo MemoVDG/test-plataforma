@@ -20,3 +20,6 @@ class Product(models.Model):
   value = models.FloatField(validators=[validate_value])
   discount_value = models.FloatField()
   stock = models.IntegerField(validators=[validate_stock])
+  
+  def __str__(self):
+      return '%s %s %s %s' % (self.name, self.value, self.discount_value, self.stock)
